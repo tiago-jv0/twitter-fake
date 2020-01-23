@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="shortcut icon" href="./SVG/twitter.svg" type="image/x-icon">
+        <title>Twitter</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="content">
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <svg class="header__icon">
+                                <use xlink:href="./sprite.svg#icon-home3"></use>
+                            </svg>
+                            <span>Home</span>
+                        </li>
+                        <li class="header__item">
+                            <svg class="header__icon">
+                                <use xlink:href="./sprite.svg#icon-bookmark"></use>
+                            </svg>
+                            <span>Notifications</span>
+                        </li>
+                        <li class="header__item">
+                            <svg class="header__icon">
+                                <use xlink:href="./sprite.svg#icon-mail"></use>
+                            </svg>
+                            <span>Messages</span>
+                        </li>
+                    </ul>
+                </nav>
+                <svg class="header__logo">
+                    <use xlink:href="./sprite.svg#icon-twitter"></use>
+                </svg>
+                <div class="header__user-menu">
+                    <input
+                        class="header__user-input"
+                        type="search"
+                        name="search"
+                        id="search"
+                        placeholder="Search on twitter"
+                    />
+                    <img class="header__user-avatar" src="./images/user-avatar.jpg" alt="User Avatar" />
+                    <button class="button">Tweet</button>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <h1 class="banner__text">Twitter</h1>
+        </div>
+    </body>
+</html>
