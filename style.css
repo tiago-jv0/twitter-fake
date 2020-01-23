@@ -104,6 +104,12 @@ input,button { outline:  none;}
     border-radius: 16px;
 }
 
+.button--white {
+    background-color: #FFF;
+    color: #3BB9E3;
+    border: 1px solid #3BB9E3;
+}
+
 .banner {
     height: 380px;
     width: 100%;
@@ -112,4 +118,60 @@ input,button { outline:  none;}
     align-items: center;
     justify-content: center;
     color: #FFF;
+}
+
+.bar {
+    height: 59px;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.bar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 270px;
+    height: 100%;
+}
+
+.bar__list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+
+.list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 15px;
+    position: relative;
+}
+
+.list__item.active::after {
+    content : '';
+    height : 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color : #3BB9E3
+}
+
+.list__name {
+    color: #667580;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.list__number {
+    font-size: 18px;
+    color: #667580;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.list__item.active .list__number{
+    color: #3BB9E3;
 }
