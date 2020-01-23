@@ -175,3 +175,98 @@ input,button { outline:  none;}
 .list__item.active .list__number{
     color: #3BB9E3;
 }
+
+.wrapper-content {
+    display: flex;
+}
+
+.profile {
+    width: 260px;
+
+
+}
+
+.profile__avatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    margin-top: -130px;
+}
+
+.profile__name {
+    font-size: 21px;
+    color: #1F2226;
+    margin-top: 10px;
+}
+
+.profile__username {
+    font-size: 14px;
+    color: #53626c;
+}
+
+.profile__bio {
+    color: #1F2226;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.profile__user-info,
+.profile__user-info li a {
+    margin-top: 20px;
+    list-style: none;
+    font-size: 14px;
+    color : #657786;
+    text-decoration: none;
+}
+
+.profile__user-info li{
+    display: flex;
+    align-items: center;
+}
+
+.profile__user-info li:not(:first-child){
+    margin-top: 5px;
+}
+
+.widget {
+    margin-top: 20px;
+}
+
+.widget__title {
+    font-weight: normal;
+    color : #3BB9E3;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+
+.followers__list,
+.images__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.followers__follower,
+.images__image {
+    flex-grow: 1;
+    width: 43px;
+    margin-bottom: 5px;
+    height: 43px;
+    background-color: #d0d5d9;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+.images__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
