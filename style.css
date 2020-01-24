@@ -182,8 +182,6 @@ input,button { outline:  none;}
 
 .profile {
     width: 260px;
-
-
 }
 
 .profile__avatar {
@@ -269,4 +267,108 @@ input,button { outline:  none;}
     width: 80px;
     height: 80px;
     border-radius: 5px;
+}
+
+.timeline {
+    flex-grow: 1;
+}
+
+
+.widgets {
+    width :290px;
+    padding: 15px;
+    background-color: #FFF;
+    margin-top: 10px;
+}
+
+.widget__title {
+    display: flex;
+    align-items: baseline;
+}
+
+.widget__title strong {
+    font-size: 18px;
+    color: #1f2226;
+}
+
+.widget__title a {
+    font-size: 12px;
+    color: #3BB9E3;
+    text-decoration: none;
+    position: relative;
+    padding-left: 10px;
+}
+
+.widget__title a::before{
+    content :'';
+    width: 2px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #222;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+
+.widget .follow ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.widget .follow ul li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccd6dd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.widget .follow ul li:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+.widget .follow ul li a{
+    color: #CCD6DD;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.user-to-follow{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.user-to-follow__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+}
+
+.user-to-follow__info {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-to-follow__info strong {
+    font-size: 14px;
+    color: #1f2326;
+}
+.user-to-follow__info strong span {
+    font-weight: normal;
+    color: #9a9a9a;
+}
+
+.button--info {
+    height: 27px;
+    margin-right: 0;
+    margin-top: 4px;
 }
